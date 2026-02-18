@@ -2,90 +2,120 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>IBU Infotech - Digital Solutions Company</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IBU Infotech</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            background: #f4f6f8;
-        }
-        header {
-            background: #0a66c2;
-            color: white;
-            padding: 40px;
+            background-color: #f4f4f4;
             text-align: center;
         }
+
+        header {
+            background: #0a2a66;
+            color: white;
+            padding: 20px;
+        }
+
+        header img {
+            width: 120px;
+        }
+
         section {
-            padding: 40px;
-            max-width: 1000px;
-            margin: auto;
+            padding: 40px 20px;
         }
-        h2 {
-            color: #0a66c2;
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
         }
-        .card {
+
+        .service-box {
             background: white;
             padding: 20px;
-            margin: 15px 0;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 250px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
+
         footer {
-            background: #0a66c2;
+            background: #0a2a66;
             color: white;
-            text-align: center;
             padding: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
         }
     </style>
 </head>
 <body>
 
 <header>
+    <!-- Replace logo.png with your actual logo file name -->
+    <img src="logo.png" alt="IBU Infotech Logo">
     <h1>IBU Infotech</h1>
-    <p>AI • Data Services • Automation • XML Conversion</p>
+    <p>Smart Digital Solutions for Modern Businesses</p>
 </header>
 
 <section>
     <h2>About Us</h2>
-    <div class="card">
-        <p>
-            IBU Infotech provides high-quality AI data services, prompt engineering,
-            annotation, Word to XML conversion, and automation solutions.
-            We help businesses improve AI models and streamline workflows with
-            reliable and scalable solutions.
-        </p>
-    </div>
+    <p>
+        IBU Infotech is a leading digital solutions company providing
+        Web Development, App Development, AI Solutions, Translation Services,
+        and Business Automation for clients worldwide.
+    </p>
+</section>
 
-    <h2>Services</h2>
-    <div class="card">
-        <ul>
-            <li>Prompt Engineering & AI Training</li>
-            <li>Data Annotation & Labeling</li>
-            <li>Word to XML Conversion</li>
-            <li>AI Chatbot Development</li>
-            <li>Website Automation</li>
-            <li>Human Evaluation for AI Models</li>
-        </ul>
-    </div>
+<section>
+    <h2>Our Services</h2>
+    <div class="services">
+        
+        <div class="service-box">
+            <h3>Web Development</h3>
+            <p>Custom websites, eCommerce, WordPress, Shopify & CMS solutions.</p>
+        </div>
 
-    <h2>Projects</h2>
-    <div class="card">
-        <p>✔ AI Annotation Projects</p>
-        <p>✔ XML Publishing Workflows</p>
-        <p>✔ Automation Systems</p>
-    </div>
+        <div class="service-box">
+            <h3>App Development</h3>
+            <p>Android & iOS mobile applications for startups and enterprises.</p>
+        </div>
 
-    <h2>Contact</h2>
-    <div class="card">
-        <p>Email: your@email.com</p>
-        <p>Website: https://ibulet.in</p>
+        <div class="service-box">
+            <h3>AI Solutions</h3>
+            <p>Machine Learning, Data Annotation, Chatbots & Automation systems.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Translation Services</h3>
+            <p>Professional multilingual translation and localization services.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>eHub</h3>
+            <p>Digital Business Hub offering automation, CRM setup, and cloud integration.</p>
+        </div>
+
     </div>
 </section>
 
+<section>
+    <h2>Contact Us</h2>
+    <p>Email: contact@ibuinfotech.in</p>
+    <p>Website: www.ibuinfotech.in</p>
+</section>
+
 <footer>
-    <p>© 2026 IBU Infotech</p>
+    <p>© 2026 IBU Infotech. All Rights Reserved.</p>
 </footer>
 
 </body>
 </html>
+
