@@ -30,24 +30,22 @@ section {
 
 .services {
     display: flex;
-    justify-content: center;
     gap: 20px;
-    flex-wrap: nowrap; /* Keeps all in one row */
-    overflow-x: auto;  /* Scroll on small screens */
+    overflow-x: auto;
+    padding-bottom: 20px;
 }
 
 .service-box {
     background: white;
+    min-width: 260px;
     padding: 25px;
-    width: 250px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     text-align: left;
 }
 
 .service-box h3 {
     color: #0a2a66;
-    margin-top: 0;
 }
 
 footer {
@@ -64,84 +62,83 @@ footer {
 <header>
     <img src="logo.jpeg" alt="IBU Infotech Logo">
     <h1>IBU Infotech</h1>
-    <p>Innovative Digital & AI Solutions for Growing Businesses</p>
+    <p>Services That Power Your Digital Business</p>
 </header>
 
 <section>
-    <h2>About Us</h2>
-    <p>
-        IBU Infotech is a professional digital solutions company delivering 
-        high-quality web development, AI services, automation systems, 
-        and multilingual solutions across global markets.
-    </p>
-</section>
+<h2>Our Core Services</h2>
 
-<section>
-    <h2>Our Services</h2>
+<div class="services">
 
-    <div class="services">
+<div class="service-box">
+<h3>Artificial Intelligence</h3>
+<p>
+High-quality data annotation, LLM support, machine learning training,
+prompt engineering, and scalable AI model development solutions.
+</p>
+</div>
 
-        <div class="service-box">
-            <h3>Web Development</h3>
-            <p>
-                We build modern, responsive, and SEO-friendly websites
-                using HTML, WordPress, Shopify, and custom frameworks.
-                From business websites to full eCommerce platforms,
-                we deliver secure and scalable solutions.
-            </p>
-        </div>
+<div class="service-box">
+<h3>Translation</h3>
+<p>
+Certified multilingual translation for legal, medical, technical,
+and global business content including localization and subtitling.
+</p>
+</div>
 
-        <div class="service-box">
-            <h3>App Development</h3>
-            <p>
-                Our team develops Android and iOS applications tailored
-                for startups and enterprises. We focus on performance,
-                user experience, and seamless backend integration.
-            </p>
-        </div>
+<div class="service-box">
+<h3>Transcription</h3>
+<p>
+Accurate subtitle-ready and time-coded transcription services
+for medical, legal, academic, and corporate sectors.
+</p>
+</div>
 
-        <div class="service-box">
-            <h3>AI Solutions</h3>
-            <p>
-                We provide AI-powered services including chatbots,
-                automation tools, data annotation, and machine learning
-                support to help businesses improve efficiency.
-            </p>
-        </div>
+<div class="service-box">
+<h3>Web Development</h3>
+<p>
+Responsive websites, CMS platforms, eCommerce builds,
+landing pages, and full-stack application development.
+</p>
+</div>
 
-        <div class="service-box">
-            <h3>Translation Services</h3>
-            <p>
-                Professional translation and localization services
-                in multiple languages for legal, technical,
-                business, and academic content.
-            </p>
-        </div>
+<div class="service-box">
+<h3>Web Design</h3>
+<p>
+Modern UI/UX design, branding, graphics, templates,
+and complete digital identity solutions.
+</p>
+</div>
 
-        <div class="service-box">
-            <h3>eHub</h3>
-            <p>
-                eHub is our Digital Business Hub offering CRM setup,
-                business automation, cloud integration, startup
-                consulting, and enterprise digital transformation solutions.
-            </p>
-        </div>
+<div class="service-box">
+<h3>Google Workspace</h3>
+<p>
+Complete Google Workspace setup including Gmail migration,
+drive configuration, calendar sync, and admin automation.
+</p>
+</div>
 
-    </div>
-</section>
+<div class="service-box">
+<h3>Zoho Services</h3>
+<p>
+Zoho CRM, Books, Desk, Inventory setup with workflow
+automation and long-term operational support.
+</p>
+</div>
 
-<section>
-    <h2>Why Choose Us?</h2>
-    <p>
-        ✔ 8+ Years Experience <br>
-        ✔ 1000+ Happy Clients <br>
-        ✔ 3000+ Completed Projects <br>
-        ✔ Global Service Support
-    </p>
+<div class="service-box">
+<h3>eHub</h3>
+<p>
+Digital Business Hub offering automation, CRM integration,
+cloud systems, startup consulting, and enterprise digital transformation.
+</p>
+</div>
+
+</div>
 </section>
 
 <footer>
-    <p>© 2026 IBU Infotech | All Rights Reserved</p>
+<p>© 2026 IBU Infotech | All Rights Reserved</p>
 </footer>
 
 </body>
