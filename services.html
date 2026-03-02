@@ -1,52 +1,181 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Services - Ibu Infotech</title>
-<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services | IBU Infotech</title>
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f6f9;
+}
+
+/* Header */
+
+header {
+    background: #1f2a44;
+    color: white;
+    padding: 15px 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    height: 45px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+/* Hero */
+
+.hero {
+    background: linear-gradient(135deg,#2b4dbd,#3f6ad8);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 12px;
+    margin: 40px;
+}
+
+/* Section */
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin: 40px 0;
+    color: #1f2a44;
+}
+
+/* Cards */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.icon {
+    font-size: 40px;
+    color: #2b4dbd;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #2b4dbd;
+}
+
+/* Footer */
+
+footer {
+    background: #1f2a44;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+</style>
 </head>
 
 <body>
 
 <header>
-
-    <img src="logo.jpeg" alt="IBU Infotech Logo" width="120">
-    <h1>IBU Infotech</h1>
-
 <nav>
-<a href="index.html">Home</a>
-<a href="services.html">Services</a>
-<a href="portfolio.html">Portfolio</a>
-<a href="contact.html">Contact</a>
+    <img src="logo.png" alt="IBU Infotech">
+    <ul>
+        <li>Home</li>
+        <li>Services</li>
+        <li>Portfolio</li>
+        <li>Contact</li>
+    </ul>
 </nav>
 </header>
 
-<section>
-<h2>Our Services</h2>
+<div class="hero">
+    <h1>Our Services</h1>
+    <p>Comprehensive technology and digital transformation solutions for modern businesses.</p>
+</div>
+
+<div class="container">
+
+<h2 class="section-title">What We Offer</h2>
+
+<div class="grid">
 
 <div class="card">
-<h3>Website Development</h3>
-<p>Business websites, ecommerce, and custom solutions.</p>
+<i class="fas fa-robot icon"></i>
+<h3>AI & Automation Solutions</h3>
+<p>Intelligent automation, chatbot systems, workflow optimization, and AI-powered business solutions.</p>
 </div>
 
 <div class="card">
-<h3>EPUB & XML Conversion</h3>
-<p>Professional digital publishing conversion services.</p>
+<i class="fas fa-chart-line icon"></i>
+<h3>CRM & Business Applications</h3>
+<p>Implementation and customization of CRM platforms and business tools to enhance productivity.</p>
 </div>
 
 <div class="card">
-<h3>Translation Services</h3>
-<p>Multilingual translation and localization.</p>
+<i class="fas fa-code icon"></i>
+<h3>Web & App Development</h3>
+<p>Modern websites and mobile applications with responsive design and scalable architecture.</p>
 </div>
 
 <div class="card">
+<i class="fas fa-book icon"></i>
+<h3>Digital Publishing & EPUB</h3>
+<p>Professional EPUB conversion, XML workflows, and document formatting services.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-language icon"></i>
+<h3>Language & Localization</h3>
+<p>Multilingual translation and localization services for global communication.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-cloud icon"></i>
 <h3>Cloud & IT Consulting</h3>
-<p>Cloud setup, automation, and IT support.</p>
+<p>Cloud setup, infrastructure optimization, and IT consulting services.</p>
 </div>
 
-</section>
+</div>
+
+</div>
 
 <footer>
-<p>© 2026 Ibu Infotech</p>
+© 2026 IBU Infotech
 </footer>
 
 </body>
