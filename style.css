@@ -59,8 +59,7 @@ cursor: pointer;
 /* Hero */
 
 .hero {
-    background: linear-gradient(135deg,#2b4dbd,#3f6ad8);
-    color: white;
+    color: black;
     text-align: center;
     padding: 60px 20px;
     border-radius: 12px;
