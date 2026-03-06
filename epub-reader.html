@@ -39,13 +39,21 @@ width:100%;
 var book = ePub("./seh.epub");
 
 var rendition = book.renderTo("viewer", {
-  width: "100%",
-  height: "100%"
+width: "100%",
+height: "100%"
 });
 
 rendition.display();
 
-</script>
+document.addEventListener("keydown", function(e) {
+  if (e.key === "ArrowRight") {
+    rendition.next();
+  }
+  if (e.key === "ArrowLeft") {
+    rendition.prev();
+  }
+});
 
+</script>
 </body>
 </html>
