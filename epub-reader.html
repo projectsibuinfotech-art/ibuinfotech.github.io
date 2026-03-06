@@ -36,21 +36,14 @@ width:100%;
 
 <script>
 
-fetch("seh.epub")
-.then(response => response.arrayBuffer())
-.then(data => {
+var book = ePub("./seh.epub");
 
-  var book = ePub(data);
+var rendition = book.renderTo("viewer", {
+  width: "100%",
+  height: "100%"
+});
 
-  var rendition = book.renderTo("viewer", {
-    width: "100%",
-    height: "100%"
-  });
-
-  rendition.display();
-
-})
-.catch(err => console.log("EPUB failed to load:", err));
+rendition.display();
 
 </script>
 
