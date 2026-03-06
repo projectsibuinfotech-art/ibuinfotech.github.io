@@ -20,11 +20,12 @@ text-align:center;
 }
 
 #viewer{
-height:90vh;
+height:85vh;
+width:100%;
 }
 
 </style>
-
+  
 </head>
 
 <body>
@@ -45,6 +46,10 @@ height: "100%"
 });
 
 rendition.display();
+
+book.ready.then(function(){
+console.log("EPUB loaded successfully");
+});
 
 </script>
 
