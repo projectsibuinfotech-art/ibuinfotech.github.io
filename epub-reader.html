@@ -6,7 +6,6 @@
 <script src="https://cdn.jsdelivr.net/npm/epubjs/dist/epub.min.js"></script>
 
 <style>
-
 body{
 margin:0;
 font-family:Arial;
@@ -23,9 +22,8 @@ text-align:center;
 height:85vh;
 width:100%;
 }
-
 </style>
-  
+
 </head>
 
 <body>
@@ -38,18 +36,21 @@ width:100%;
 
 <script>
 
-var book = ePub("seh.epub");
+fetch("seh.epub")
+.then(response => response.arrayBuffer())
+.then(data => {
 
-var rendition = book.renderTo("viewer", {
-width: "100%",
-height: "100%"
-});
+  var book = ePub(data);
 
-rendition.display();
+  var rendition = book.renderTo("viewer", {
+    width: "100%",
+    height: "100%"
+  });
 
-book.ready.then(function(){
-console.log("EPUB loaded successfully");
-});
+  rendition.display();
+
+})
+.catch(err => console.log("EPUB failed to load:", err));
 
 </script>
 
